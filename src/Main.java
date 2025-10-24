@@ -9,6 +9,8 @@ public class Main {
         for(int i = 44; i < 60; i++) schedule[3][i] = true;
         a.printPeriod(2);
         a.findFreeBlock(2,15);
+        a.findFreeBlock(2,9);
+        a.findFreeBlock(2,20);
         AppointmentBook b = new AppointmentBook(schedule);
         int period = 2;
         while (period < 5) {
@@ -18,6 +20,8 @@ public class Main {
         }
         b.printPeriod(4);
         System.out.println(b.makeAppointment(2, 4, 22));
+        System.out.println(b.makeAppointment(3, 4, 3));
+        System.out.println(b.makeAppointment(2, 4, 30));
         b.printPeriod(4);
 
     }
